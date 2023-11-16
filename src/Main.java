@@ -7,7 +7,7 @@ public class Main {
         String N = s.nextLine();
         int n = Integer.parseInt(N); //String to integer
         if(n < 0){ //Check if amount of number are less than 0
-            System.out.println("You number should be a natural number");
+            System.out.println("You number should be a natural number and 0");
             return;
         }
         int [] arr = new int [n];
@@ -18,7 +18,9 @@ public class Main {
             arr[i] = num;
         }
         System.out.println("-----------------------------");
-        QuickSort(arr , 0 , n-1);
+        if(n>= 1){
+            QuickSort(arr , 0 , n-1);
+        }
         for(int i = 0 ; i < n ; i++){
             System.out.println(arr[i]);
         }
