@@ -17,7 +17,7 @@ public class Main {
             int num = Integer.parseInt(number);
             arr[i] = num;
         }
-        System.out.println("-----------------------------");
+        System.out.println("---------------------------");
         if(n>= 1){
             QuickSort(arr , 0 , n-1);
         }
